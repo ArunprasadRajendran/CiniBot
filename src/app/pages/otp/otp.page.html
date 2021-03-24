@@ -1,0 +1,30 @@
+<ion-content>
+  <div>
+    <div class="background" [ngStyle]="{'background-image': 'url(' +background+ ')'}">
+      <img src="assets/imgs/KD-SVG-Dark.svg" />
+    </div>
+  </div>
+  <div class="ion-text-center">
+    <h1>Verification</h1>
+  </div>
+  <div>
+    <ion-row class="input_row">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input placeholder="Phone Number"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div>
+    <p class="text">Enter Otp</p>
+  </div>
+  <div class="otp">
+    <ng-otp-input #ngOtpInput [config]="config"></ng-otp-input>
+  </div>
+</ion-content>
+<ion-footer>
+  <div style="text-align: center;padding: 20px 20px 30px;">
+    <ion-button class="verify" (click)="verify()">Verify</ion-button>
+  </div>
+</ion-footer>

@@ -1,0 +1,214 @@
+ion-content {
+    --background: #0b132b;
+}
+
+ion-header {
+    background: #0b132b;
+    ion-toolbar {
+        --background: transparent;
+        position: absolute;
+    }
+    ion-buttons {
+        position: absolute;
+        top: 0%;
+        padding: 15px;
+    }
+}
+
+ion-back-button {
+    background: #3a506b;
+    border-radius: 40px;
+    color: white;
+}
+
+.background {
+    height: 260px;
+    text-align: center;
+    background-position: center;
+}
+
+.img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+ion-card {
+    margin-top: 300px;
+    width: 100%;
+    margin-left: 0px;
+    background: #0b132b;
+}
+
+.row {
+    .title {
+        margin: 10px;
+        color: #2ac2e5;
+        font-weight: 500;
+        font-size: 25px;
+    }
+    .lang {
+        margin: 10px;
+        color: #448b9b;
+    }
+    .star {
+        margin: 10px;
+        letter-spacing: 5px;
+        .checked {
+            color: orange;
+        }
+    }
+    .min {
+        margin: 10px 40px 10px 10px;
+        color: #448b9b;
+        ion-icon {
+            margin: -3px 1px;
+            zoom: 1.5;
+        }
+    }
+}
+
+.scroll {
+    text-align: center;
+    background: #0b132b;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    ion-icon {
+        zoom: 1.5;
+    }
+}
+
+.desc {
+    color: #4d6a8e;
+    padding: 0px 10px 0px 10px;
+    line-height: 20px;
+    text-align: justify;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.cast_crew {
+    .title {
+        color: #448b9b;
+        margin: 15px 15px 10px;
+        font-size: 18px;
+        display: flex;
+        font-weight: 400;
+    }
+
+    ion-row {
+        margin-left: 10px;
+    }
+    ion-col {
+        margin-right: 5px;
+    }
+
+    ion-item {
+        --background: #1c2541;
+        border-radius: 10px;
+        ion-thumbnail {
+            margin: 0px 15px 0px -17px;
+            width: 55px;
+            height: 67px;
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    ion-label {
+        margin: 0px;
+        h2 {
+            color: #2ac2e5;
+            font-size: 12px;
+        }
+        p {
+            font-size: 10px;
+            color: #448b9b;
+        }
+    }
+}
+
+.reviews {
+    margin-bottom: 60px;
+    .title {
+        color: #448b9b;
+        margin: 20px 15px 15px;
+        font-size: 18px;
+        display: flex;
+        font-weight: 400;
+    }
+
+    ion-row {
+        margin-left: 15px;
+    }
+    ion-col {
+        background: #1c2541;
+        margin-right: 15px;
+        border-radius: 10px;
+    }
+
+    ion-item {
+        --background: #1c2541;
+        --padding-start: 10px;
+        ion-avatar {
+            width: 30px;
+            height: 30px;
+            margin: 0px;
+        }
+    }
+
+    ion-label {
+        margin: 0px;
+        h2 {
+            color: #2ac2e5;
+            font-size: 12px;
+        }
+        p {
+            font-size: 10px;
+            color: #448b9b;
+        }
+    }
+
+    .review_desc {
+        color: #4d6a8e;
+        padding: 5px 10px 10px 10px;
+        text-align: justify;
+        margin: 0px;
+        font-size: 10px;
+        line-height: 13px;
+        display: flex;
+        align-items: center;
+    }
+    .star {
+        letter-spacing: 3px;
+        margin-top: 5px;
+        .checked {
+            color: orange;
+        }
+    }
+}
+
+.book_tickets {
+    width: 90%;
+    height: 50px;
+    color: #0b132b;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 0.085em;
+    --border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    background: transparent;
+    bottom: 0%;
+    padding: 15px;
+    width: 100%;
+}

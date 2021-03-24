@@ -1,0 +1,26 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="movies" >
+      <ion-button class="tab_button" *ngIf="selectTab=='movies'">
+        <ion-icon src="assets/icon/movie.svg"></ion-icon>&nbsp; Movies
+      </ion-button>
+      <ion-icon *ngIf="selectTab!='movies'" src="assets/icon/movie-unselect.svg"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tickets" >
+      <ion-button class="tab_button" *ngIf="selectTab=='tickets'">
+        <ion-icon src="assets/icon/tickets.svg"></ion-icon>&nbsp; Tickets
+      </ion-button>
+      <ion-icon *ngIf="selectTab!='tickets'" src="assets/icon/tickets-unselect.svg"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="about" >
+      <ion-button class="tab_button" *ngIf="selectTab=='about'">
+        <ion-icon src="assets/icon/info.svg"></ion-icon>&nbsp; About
+      </ion-button>
+      <ion-icon *ngIf="selectTab!='about'" src="assets/icon/info-unselect.svg"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h1>Order Details</h1>
+  </div>
+
+  <ion-card mode="ios">
+    <ion-row class="mv_details">
+      <ion-col>
+        <img class="qrcode" src="assets/imgs/qrcode.svg" />
+      </ion-col>
+      <ion-col>
+        <div style="margin: 0px 0px 20px 15px;">
+          <p class="txt">Movie Name</p>
+          <p class="value">Master (U/A)</p>
+        </div>
+        <div style=" margin: 0px 0px 0px 15px;">
+          <p class="txt">Language</p>
+          <p class="value">Tamil</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <div class="ticket_details">
+      <ion-row>
+        <ion-col size="4">
+          <p class="txt">Date</p>
+          <p class="value">17/2/2021</p>
+        </ion-col>
+        <ion-col size="8">
+          <p class="txt">Venue</p>
+          <p class="value">KD Cinemas, Chennai</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <p class="txt">Time</p>
+          <p class="value">09:30 AM</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="txt">Seats</p>
+          <p class="value">J1, J2</p>
+        </ion-col>
+        <ion-col size="4">
+          <p class="txt">Screen</p>
+          <p class="value">1</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p style="border: 1px dashed #3A506A;"></p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <p class="txt">Price</p>
+          <p class="value">&#8377;280</p>
+        </ion-col>
+        <ion-col size="8">
+          <p class="txt">Booking Id</p>
+          <p class="value">KDC1210FER41</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <p class="txt">Transaction ID</p>
+          <p class="value">6cc81d0d-1c24-42fe-9af6-21bb88c0983a</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+  <div style="text-align: center;padding: 5px 10px 30px;">
+    <ion-button class="tickets" (click)="goback()">Take me to My Tickets</ion-button>
+  </div>
+</ion-content>

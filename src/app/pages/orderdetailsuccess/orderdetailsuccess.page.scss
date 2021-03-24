@@ -1,0 +1,104 @@
+ion-content {
+    --background: #0b132b;
+}
+
+ion-header {
+    background: #0b132b;
+    margin-bottom: -1px;
+    z-index: 0;
+    ion-toolbar {
+        --background: transparent;
+    }
+    ion-buttons {
+        padding: 15px;
+    }
+}
+
+ion-back-button {
+    background: #3a506b;
+    border-radius: 40px;
+    color: white;
+}
+
+.mv_details {
+    .txt {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        /* Tertiary */
+        color: #3a506b;
+        margin: 0px;
+    }
+
+    .value {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        /* Secondary */
+        color: #448b9b;
+        margin: 0px;
+    }
+}
+
+ion-card {
+    background: #1c2541;
+    border-radius: 10px;
+    padding: 20px 10px;
+
+    ion-col {
+        margin: auto;
+    }
+}
+
+.ticket_details {
+    margin-top: 15px;
+
+    .txt {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        /* Tertiary */
+        color: #3a506b;
+        margin: 0px;
+    }
+
+    .value {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        /* Secondary */
+        color: #448b9b;
+        margin: 0px;
+    }
+}
+
+.tickets {
+    width: 95%;
+    height: 50px;
+    color: #0b132b;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: none;
+    letter-spacing: 0.085em;
+    --border-radius: 10px;
+}
+
+h1 {
+    color: #448b9b;
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 20px;
+    line-height: 42px;
+}

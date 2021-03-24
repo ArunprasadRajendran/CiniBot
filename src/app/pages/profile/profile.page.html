@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align: center;">
+    <img class="profile" src="assets/imgs/avatar.svg" />
+  </div>
+  <div style="text-align: center;">
+    <img class="logout" (click)="logOut()" src="assets/imgs/logout.png" />
+  </div>
+  <div class="user_detail">
+    <p class="title">Name</p>
+    <ion-row class="input_row">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input placeholder="Name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <p class="title">Phone Number</p>
+    <ion-row class="input_row">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input placeholder="Phone Number"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <p class="title">Email</p>
+    <ion-row class="input_row">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input placeholder="Email"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="button_div">
+    <ion-button fill="outline">Change Password</ion-button>
+  </div>
+  <div class="Edit">
+    <img src="assets/imgs/Edit.svg" />
+  </div>
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-content>
+  <div>
+    <div class="background" [ngStyle]="{'background-image': 'url(' +background+ ')'}">
+      <img src="assets/imgs/KD-SVG-Dark.svg" />
+    </div>
+  </div>
+  <div class="ion-text-center">
+    <h1>Tell us about yourself</h1>
+  </div>
+  <div>
+    <ion-row class="input_row">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input placeholder="Name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="input_row">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input placeholder="Email Id"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="input_row">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input placeholder="Password"></ion-input>
+          <ion-buttons slot="end">
+            <ion-button>
+              <ion-icon name="eye-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="input_row">
+      <ion-col size="12">
+        <ion-item lines="none">
+          <ion-input placeholder="Confirm Password"></ion-input>
+          <ion-buttons slot="end">
+            <ion-button>
+              <ion-icon name="eye-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer>
+  <div style="text-align: center;padding: 20px 20px 20px;">
+    <ion-button class="create" (click)="create()">Create Account</ion-button>
+  </div>
+</ion-footer>

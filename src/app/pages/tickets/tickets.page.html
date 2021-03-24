@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Tickets</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="margin-top: -25px;">
+    <div *ngFor="let i of [1,2,3,4]">
+      <ion-card mode="ios" (click)="orderDetail('success')">
+        <ion-row>
+          <ion-col size="8">
+            <h1>Master &nbsp;<ion-icon src="assets/icon/Success.svg"></ion-icon>
+            </h1>
+            <p class="location">
+              <ion-icon name="location"></ion-icon>&nbsp;KD Cinemas, Chennai
+            </p>
+            <p class="time">
+              <ion-icon name="time"></ion-icon>&nbsp;17/4/2021 - 12:00 PM
+            </p>
+          </ion-col>
+          <ion-col size="4" style="margin: auto;">
+            <ion-button>&#8377; 240</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <ion-card mode="ios" (click)="orderDetail('failed')">
+        <ion-row>
+          <ion-col size="8">
+            <h1>Master &nbsp;<ion-icon src="assets/icon/Failed.svg"></ion-icon>
+            </h1>
+            <p class="location">
+              <ion-icon name="location"></ion-icon>&nbsp;KD Cinemas, Chennai
+            </p>
+            <p class="time">
+              <ion-icon name="time"></ion-icon>&nbsp;17/4/2021 - 12:00 PM
+            </p>
+          </ion-col>
+          <ion-col size="4" style="margin: auto;">
+            <ion-button>&#8377; 240</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

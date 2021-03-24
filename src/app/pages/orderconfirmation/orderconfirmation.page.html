@@ -1,0 +1,126 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="padding: 0px 15px;">
+    <h1>Order Details</h1>
+    <ion-row class="mv_detail">
+      <ion-col size="5" class="ion-text-end">
+        <img src="assets/imgs/master_order.jpeg" />
+      </ion-col>
+      <ion-col size="7" class="ion-text-start">
+        <div>
+          <p class="movie"><span class="title">Master</span>&nbsp;<span class="txt">| Tamil</span>&nbsp;<span
+              class="txt">| U/A</span></p>
+          <p class="location">
+            <ion-icon name="location"></ion-icon>&nbsp;KD Cinemas, Chennai
+          </p>
+          <p class="time">
+            <ion-icon name="time"></ion-icon>&nbsp;17/4/2021 - 12:00 PM
+          </p>
+          <ion-button class="selected_seat">J1,&nbsp;J2</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <div class="summary">
+      <p class="title">Summary</p>
+      <ion-card mode="ios">
+        <ion-row>
+          <ion-col size="auto">
+            <p>Unit Ticket Cast</p>
+          </ion-col>
+          <ion-col class="ion-text-end">
+            <p>&#8377;120</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="auto">
+            <p>Quantity</p>
+          </ion-col>
+          <ion-col class="ion-text-end">
+            <p>2</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="auto">
+            <p>Ticket Cast</p>
+          </ion-col>
+          <ion-col class="ion-text-end">
+            <p>&#8377;240</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p style="border: 1px dashed #3A506A;"></p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="auto">
+            <p>Unit Booking Fee</p>
+          </ion-col>
+          <ion-col class="ion-text-end">
+            <p>&#8377;20</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="auto">
+            <p>Quantity</p>
+          </ion-col>
+          <ion-col class="ion-text-end">
+            <p>2</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="auto">
+            <p>Booking Fee</p>
+          </ion-col>
+          <ion-col class="ion-text-end">
+            <p>&#8377;40</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p style="border: 1px dashed #3A506A;"></p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="Total">
+          <ion-col>
+            <p>Total</p>
+          </ion-col>
+          <ion-col class="ion-text-end">
+            <p>&#8377;280</p>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
+
+    <div class="user_detail">
+      <h2>User Details</h2>
+      <p class="title">Name</p>
+      <ion-row class="input_row">
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input placeholder="Name"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <p class="title">Phone Number</p>
+      <ion-row class="input_row">
+        <ion-col size="12">
+          <ion-item lines="none">
+            <ion-input placeholder="Phone Number"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div style="text-align: center;padding: 20px 10px 30px;">
+      <ion-button class="proceed" (click)="pay()">Proceed to Pay &#8377;280</ion-button>
+    </div>
+  </div>
+</ion-content>

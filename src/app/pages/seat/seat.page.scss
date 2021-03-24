@@ -1,0 +1,133 @@
+ion-content {
+    --background: #0b132b;
+}
+
+ion-header {
+    background: #0b132b;
+    margin-bottom: -1px;
+    z-index: 0;
+    ion-toolbar {
+        --background: transparent;
+    }
+    ion-buttons {
+        padding: 15px;
+    }
+}
+
+ion-back-button {
+    background: #3a506b;
+    border-radius: 40px;
+    color: white;
+}
+
+.cinema {
+    --background: #1c2541;
+    border-radius: 10px;
+    --padding-start: 15px;
+    margin-right: 10px;
+    color: #448b9b;
+    font-weight: 500;
+    ion-icon {
+        margin: 0px;
+        zoom: 0.7;
+        color: #448b9b;
+    }
+}
+
+.seat_count {
+    background: #1c2541;
+    border-radius: 10px;
+    padding: 0px 10px;
+    ion-col {
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+    }
+    ion-icon {
+        zoom: 1.7;
+    }
+    p {
+        text-align: center;
+        color: #2ac2e5;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.screens {
+    .title {
+        color: #2ac2e5;
+        margin: 20px 15px 15px;
+        font-size: 18px;
+        display: flex;
+        font-weight: 400;
+    }
+
+    ion-row {
+        margin-left: 10px;
+    }
+    ion-button {
+        --border-radius: 10px;
+        height: 43px;
+        width: 95%;
+    }
+}
+
+.seat_status {
+    text-align: center;
+    margin-top: 5px;
+    ion-row {
+        color: #448b9b;
+        width: 90%;
+        margin: auto;
+    }
+    ion-icon {
+        margin: -3px 2px;
+        zoom: 1.2;
+    }
+}
+
+.screen {
+    text-align: center;
+}
+
+ion-footer {
+    background: #0b132b;
+    margin-top: -1px;
+    z-index: 0;
+    ion-grid {
+        padding: 8px;
+    }
+    ion-button {
+        width: 98%;
+        height: 45px;
+        --border-radius: 10px;
+        color: #0b132b;
+        font-size: 17px;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    ion-col {
+        margin: auto;
+    }
+
+    .selected_seat {
+        background: #1c2541;
+        padding: 2px;
+        margin: auto;
+        border-radius: 10px;
+
+        .txt {
+            margin: 5px 10px;
+            font-size: 10px;
+            color: #448b9b;
+        }
+        .seats {
+            margin: 5px 10px;
+            color: #2ac2e5;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+}

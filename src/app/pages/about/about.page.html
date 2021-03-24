@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>KD-Cinemas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-slides [options]="slideOpts" loop="true" speed="3000">
+    <ion-slide>
+      <img src="assets/imgs/theatre.svg" />
+    </ion-slide>
+    <ion-slide>
+      <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2018/04/24173204/PVR-1.jpg" />
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/theatre.svg" />
+    </ion-slide>
+  </ion-slides> -->
+  <ion-grid class="screen_css">
+    <ion-row class="ion-nowrap" style="overflow-x: scroll;">
+      <ion-col size="9" *ngFor="let i of screenList">
+        <img src="{{i}}" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div>
+    <p class="desc">CiniBot becomes the official ticketing partner for Mumbai Indians, Kings XI Punjab and Delhi
+      Daredevils. Today
+      we have Pune Warriors and Rajasthan Royals too on board this high drama entertainment circus called the IPL.
+      CiniBot becomes the official ticketing partner for Mumbai Indians, Kings XI Punjab and Delhi
+      Daredevils.</p>
+  </div>
+  <div>
+    <img style="padding: 15px;" src="assets/imgs/map.svg" />
+  </div>
+</ion-content>

@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <div>
+      <img class="img" src="assets/imgs/master.svg" />
+    </div>
+    <div class="scroll">
+      <ion-icon src="assets/icon/Scroll Top.svg"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-card mode="ios">
+      <ion-grid>
+        <ion-row class="row">
+          <ion-col size="6" style="margin: auto;">
+            <h2 class="title">Master</h2>
+            <p class="lang">Tamil U/A</p>
+          </ion-col>
+          <ion-col size="6" class="ion-text-end" style="margin: auto;">
+            <p class="star"> <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <p class="min">
+              <ion-icon name="time-outline"></ion-icon> 120m
+            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="desc">CiniBot becomes the official ticketing partner for Mumbai Indians, Kings XI Punjab and Delhi
+              Daredevils. Today
+              we have Pune Warriors and Rajasthan Royals too on board this high drama entertainment circus called the
+              IPL.
+            </p>
+          </ion-col>
+        </ion-row>
+        <div class="cast_crew">
+          <p class="title">Cast & Crew</p>
+          <ion-row class="ion-nowrap" style="overflow-x: scroll;">
+            <ion-col size="5.5" *ngFor="let i of [1,2,3,4]">
+              <ion-item lines="none">
+                <ion-thumbnail slot="start">
+                  <img src="assets/imgs/vijay.svg">
+                </ion-thumbnail>
+                <ion-label>
+                  <h2>Joseph Vijay</h2>
+                  <p>Actor</p>
+                </ion-label>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="reviews">
+          <p class="title">Reviews</p>
+          <ion-row class="ion-nowrap" style="overflow-x: scroll;">
+            <ion-col size="5.3" *ngFor="let i of [1,2,3,4]">
+              <ion-item lines="none">
+                <ion-avatar slot="end">
+                  <img src="assets/imgs/vijay.svg">
+                </ion-avatar>
+                <ion-label>
+                  <h2>Gopala Krishnan</h2>
+                  <p class="star"><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </p>
+                </ion-label>
+              </ion-item>
+              <p class="review_desc">CiniBot becomes the official ticketing partner for Mumbai Indians, Kings XI Punjab
+                and Delhi
+                Daredevils.
+              </p>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-grid>
+    </ion-card>
+  </div>
+  <div class="footer">
+    <ion-button class="book_tickets" (click)="book()">Book Tickets</ion-button>
+  </div>
+</ion-content>
